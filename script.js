@@ -31,12 +31,14 @@
 // li.style.borderRadius = "20px";
 
 // dom Manipulation
+alert("coba aja gays biar gak lupa");
 
 const pBaru = document.createElement("p");
 const text2 = document.createTextNode("paragraf baru");
 
 pBaru.appendChild(text2);
 // simpan paragraf
+//
 
 const sectionA = document.getElementById("a");
 sectionA.appendChild(pBaru);
