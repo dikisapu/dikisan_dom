@@ -30,8 +30,25 @@
 // li.style.color = "#040D12";
 // li.style.borderRadius = "20px";
 
+// series pertama
+// const judul = document.getElementById("judul");
+// judul.innerHTML = "<em>dikisantoso</em>";
+
+// const h1 = document.getElementsByTagName("h1")[0];
+// h1.setAttribute("name", "dikisan");
+
+// const a = document.querySelector("section#a a");
+
+// const p2 = document.querySelector(".p2");
+
+// p2.setAttribute("class", "label");
+
+// a.getAttribute = "href";
+
 // dom Manipulation
-alert("coba aja gays biar gak lupa");
+
+// series kedua
+// alert("coba aja gays biar gak lupa");
 
 const pBaru = document.createElement("p");
 const text2 = document.createTextNode("paragraf baru");
@@ -52,3 +69,46 @@ const ul = document.querySelector("section#b ul");
 const li2 = ul.querySelector("li:nth-child(2)");
 
 ul.insertBefore(liBaru, li2);
+
+// const pBaru = document.createElement("p");
+const textP = document.createTextNode("paragraf baru");
+pBaru.appendChild(textP);
+
+// const sectionA = document.getElementById("a");
+sectionA.appendChild(pBaru);
+
+const h2 = document.createElement("h2");
+const textH2 = document.createTextNode("anjay text baru");
+h2.appendChild(textH2);
+const bodyA = document.body;
+bodyA.appendChild(h2);
+
+const li = document.createElement("li");
+const textLi = document.createTextNode("ini text bang");
+
+li.appendChild(textLi);
+
+const ulsan = document.querySelector("section#b ul");
+const libaru = document.querySelector("section#b ul li:nth-child(2)");
+
+ulsan.insertBefore(li, libaru);
+
+const sA = document.querySelector("section#a  ");
+const link = document.getElementsByTagName("a")[0];
+
+sA.removeChild(link);
+
+const b = document.getElementById("b");
+const p = b.getElementsByTagName("p")[0];
+
+const elemen = document.createElement("h2");
+const elemenText = document.createTextNode("INI JUDUL BRO");
+
+elemen.appendChild(elemenText);
+
+b.replaceChild(elemen, p);
+
+pBaru.style.backgroundColor = `lightblue`;
+elemen.style.backgroundColor = "lightblue";
+h2.style.backgroundColor = "lightblue";
+li.style.backgroundColor = "lightblue";
